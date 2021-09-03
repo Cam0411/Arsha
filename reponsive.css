@@ -25,6 +25,10 @@
         left: 10%;
         position: absolute;
     }
+    #header .header-heading 
+    {
+        margin-left: 0px;
+    }
     #sub-nav-tablet li:hover #sub-nav-2-tablet 
     {
         display: none;
