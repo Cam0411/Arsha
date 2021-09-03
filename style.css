@@ -22,10 +22,10 @@
 {
     color: #fff;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 800;
     padding: 20px;
-    font-size: 30px;
-    margin-left: 20px;
+    font-size: 25px;
+    margin-left: 40px;
 }
 #nav 
 {
@@ -50,7 +50,7 @@
 }
 #nav > li > a:hover 
 {
-    color: #4782e4;
+    color: #47b2e4;
 }
 #nav li:hover #sub-nav 
 {
@@ -106,7 +106,7 @@
 }
 #sub-nav > li > a:hover 
 {
-    color: #4782e4;
+    color: #47b2e4;
 }
 #sub-nav .arrow 
 {
@@ -145,7 +145,7 @@
 }
 #sub-nav-2 li a:hover 
 {
-    color: #4782e4;
+    color: #47b2e4;
 }
 #header #menu-tablet
 {
@@ -220,7 +220,7 @@
 }
 #nav-tablet > li > a:hover 
 {
-    color: #4782e4;
+    color: #47b2e4;
 }
 #nav-tablet li:hover #sub-nav-tablet 
 {
@@ -228,11 +228,11 @@
 }
 #nav-tablet  .color-nav a 
 {
-    color: #4782e4;
+    color: #47b2e4;
 }
 #nav-tablet .border-nav 
 {
-    border: 2px solid #4782e4;
+    border: 2px solid #47b2e4;
     border-radius: 24px;
     padding: 10px 20px 10px 20px;
     
@@ -270,7 +270,7 @@
 }
 #sub-nav-tablet > li > a:hover 
 {
-    color: #4782e4;
+    color: #47b2e4;
 }
 #sub-nav-tablet .arrow 
 {
@@ -379,14 +379,16 @@
 {
     color: #fff;
     margin-bottom: 20px;
-    line-height: 70px;
-    font-size: 50px;
+    line-height: 50px;
+    font-size: 35px;
+    font-weight: 600;
 }
 .slider-about
 {
-   color: #fff;
+   color: #999;
    line-height: 32px;
    margin-bottom: 20px;
+   font-size: 16px;
 }
 .slider-nav li 
 {
@@ -411,6 +413,10 @@
     font-size: 16px;
     text-transform: capitalize;
     font-weight: 700;
+}
+.arrow-2 
+{
+    padding: 3px;
 }
 .slider-nav-watch i 
 {
