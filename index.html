@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Arsha </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="reponsive.css"> 
+</head>
+<body>
+    <div id="header">
+     
+          <h1 class="header-heading">arsha</h1>
+          <ul id="nav">
+              <li class="color-nav"><a href="">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Protfolio</a></li>
+              <li><a href="#">team</a></li>
+              <li><a href="#">Drop Down <i class="fas fa-chevron-down"></i> </a>
+              <ul id="sub-nav">
+                <li><a href="#">Drop Down 1 </a></li>
+                  <li>  <a href="#">  Deep Drop Down <i class=" arrow fas fa-chevron-right"></i>  </a>
+                   <ul id="sub-nav-2">
+                      <li><a href="#">Drop Down 1 </a></li>
+                      <li><a href="#">Drop Down 2 </a></li>
+                      <li><a href="#">Drop Down 3 </a></li>
+                      <li><a href="#" > Drop Down 4 </a></li>
+                   </ul>
+                </li>
+                <li><a href="#">Drop Down 3 </a></li>
+                <li><a href="#">Drop Down 4 </a></li>
+              </ul>
+            </li>
+              <li><a href="#">Contact</a></li>
+              <li ><a class="border-nav" href="#">Get Started</a></li>
+          </ul>
+          <div id="menu-tablet">
+            <i class="menu fas fa-bars"></i>
+          </div>
+        
+    </div>
+    <div id="slider">
+      <div class="slider-all-txt">
+          <h1 class="heading-slider">  Better Solutions For <br> Your Business </h1>
+          <p class="slider-about">We are team of talented designers making websites with Bootstrap
+            Get Started</p>
+            <ul class="slider-nav">
+                <li class="slider-nav-border">Get Started </li>
+                <li class="slider-nav-watch"> <i class="far fa-play-circle"></i> watch Video </li>
+            </ul>
+      </div>
+      <img src="hero-img.png">
+    </div>
+    <div id="content">
+
+    </div>
+    <div id="footer">
+
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <ul id="nav-tablet">
+                <li class="color-nav"><a href="">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Protfolio</a></li>
+                <li><a href="#">team</a></li>
+                <li><a href="#">Drop Down <i class="fas fa-chevron-down"></i> </a>
+                <ul id="sub-nav-tablet">
+                  <li><a href="#">Drop Down 1 </a></li>
+                    <li>  <a href="#">  Deep Drop Down <i class=" arrow fas fa-chevron-right"></i>  </a>
+                     <ul id="sub-nav-2-tablet">
+                        <li><a href="#">Drop Down 1 </a></li>
+                        <li><a href="#">Drop Down 2 </a></li>
+                        <li><a href="#">Drop Down 3 </a></li>
+                        <li><a href="#" > Drop Down 4 </a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#">Drop Down 3 </a></li>
+                  <li><a href="#">Drop Down 4 </a></li>
+                </ul>
+              </li>
+                <li><a href="#">Contact</a></li>
+                <li ><a class="border-nav border-nav-2" href="#">Get Started</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        menus = document.querySelectorAll(".menu")
+        modal = document.querySelector(".modal")
+        modalClose = document.querySelector(".modal-close")
+        function showModal(){
+            modal.classList.add('open')
+        }
+        function hideModal(){
+            modal.classList.remove('open')
+        }
+        for (const menu of menus ){
+            menu.addEventListener('click',showModal)
+        }
+        modalClose.addEventListener('click',hideModal)
+    </script>
+    
+</body>
+</html>
