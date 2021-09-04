@@ -84,6 +84,28 @@
               </div>
           </div>
          </div>
+         <div class="content-3">
+           <div class="content-3-all-txt">
+            <h1 class="content-3-heading">Eum ipsam laborum deleniti velit pariatur architecto aut nihil</h1>
+            <p class="content-3-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+               labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+                    <button type="button" class="collapsible"> <span class="num">01</span>  Non consectetur a erat nam at lectus urna duis?<i class="arrow-down-3 fas fa-chevron-down"></i> </button>
+                    <div class="content">
+                      <p>All our users like the amazing features and illustration of our app and it effective working procedure. </p>
+                    </div>
+                    <button type="button" class="collapsible"> <span class="num">02</span>  Feugiat scelerisque varius morbi enim nunc? <i class="arrow-down-3 fas fa-chevron-down"></i></button>
+                    <div class="content">
+                      <p>
+                        You can issue either partial or full refunds. There are no fees to refund a charge, but the fees from the original charge are not returned.</p>
+                    </div>
+                    <button type="button" class="collapsible"> <span class="num">03</span>  Dolor sit amet consectetur adipiscing elit? <i class="arrow-down-3 fas fa-chevron-down"></i></button>
+                    <div class="content">
+                      <p>
+                        You can issue either partial or full refunds. There are no fees to refund a charge, but the fees from the original charge are not returned.</p>
+                    </div>
+           </div>
+           <img src="why-us.png">
+         </div>
     </div>
     <div id="footer">
 
@@ -135,6 +157,21 @@
         }
         modalClose.addEventListener('click',hideModal)
     </script>
-    
+     <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+      </script>
 </body>
 </html>
