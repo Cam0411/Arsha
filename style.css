@@ -883,3 +883,232 @@
     background: #47b2e4;
     border: 2px solid #47b2e4;
 }
+.content-7 
+{
+    height:750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: #f3f5f9;
+}
+.content-7 .content-7-heading 
+{
+    color: #37517e;
+    padding: 20px;
+    border-bottom: 2px solid #888;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+.content-7 img
+{
+    width: 162px;
+}
+.content-7-heading::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #47b2e4;
+    bottom: -5%;
+    left: calc(50% - 20px);
+}
+.content-7-about 
+{
+    padding: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    color: #888;
+}
+.content-7-all-box 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content-7-all-box li 
+{
+    list-style: none;
+    display: flex;
+}
+.content-7-box 
+{
+    background: #fff;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 556px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.content-7-box img 
+{
+    border-radius: 50%;
+    width: 116px;
+    height: 116px;
+    margin-top: 20px;
+}
+.content-7-box-all-txt 
+{
+    padding: 20px;
+}
+.content-box-7-heading 
+{
+    font-size: 15px;
+    color: #37517e;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+.content-box-7-sub-heading 
+{
+    color: #888;
+    font-size: 16px;
+
+    margin-bottom: 10px;
+    
+    
+} 
+.content-7-box-about 
+{
+    line-height: 28px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.content-7-box i 
+{
+    padding: 8px 10px 8px 10px;
+    background: #f3f5f9;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+    color: #37517e;
+    margin-bottom: 10px;
+}
+.content-7-box:hover 
+{
+    transform: scale(1.01);
+}
+.content-8 
+{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.content-8-heading
+{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    color: #37517e;
+    border-bottom: 2px solid #888;
+     position: relative;
+}
+.content-8-heading::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #47b2e4;
+    bottom: -5%;
+    left: calc(50% - 20px);
+}
+.content-8-about 
+{
+    line-height: 28px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.content-8-all-box 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content-8-box
+{
+    width: 300px; 
+    background: #fff;
+    height: 516px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.content-8-box-heading 
+{
+    font-size: 15px;
+    color: #37517e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.content-8-box-sub-heading 
+{
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: #4782e4;
+}
+.content-8-box-sub-heading-2 
+{
+    margin-bottom: 20px;
+    color: #47b2e4;
+    font-weight: 700;
+}
+.content-8-nav 
+{
+    padding: 20px;
+}
+.content-8-nav li 
+{
+    list-style: none;
+    margin-bottom: 20px;
+    color: #888;
+    line-height: 28px;
+}
+.content-8-nav li  i 
+{
+    margin-right: 5px;
+    color: #47b2e4;
+}
+.content-box-8-submit
+{
+    border: 2px solid #47b2e4;
+    color: #47b2e4;
+    text-transform: capitalize;
+    font-weight: 700;
+    border-radius: 24px;
+    width: 126px;
+    padding: 10px 14px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.content-box-8-submit:hover 
+{
+    background: #47b2e4;
+    color: #fff;
+}
+.content-8-box-mid 
+{
+    border-top: 4px solid #47b2e4;
+}
+.content-8-box-mid .content-box-8-submit 
+{
+    background: #47b2e4;
+    color: #fff;
+}
+.content-8-box-mid .content-box-8-submit:hover 
+{
+    background: #4782e4;
+}
