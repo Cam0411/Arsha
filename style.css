@@ -456,7 +456,7 @@
 
    #content 
    {
-       height:7500px;
+       height:7400px;
    }
 
    .content-1
@@ -1151,7 +1151,7 @@
     height: 2px;
     background: #47b2e4;
     bottom: -4%;
-    left: calc(50% - 20px);
+    left: calc(42%);
 }
 .content-9 .content-9-about 
 {
@@ -1290,4 +1290,117 @@
     color: #fff;
     border: #47b2e4;
     font-weight: 700;
+    appearance: none;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    border-radius: 0;
+    -webkit-border-radius:0; 
+}
+.to-top 
+{
+    position: fixed;
+    bottom: 1%;
+    right: 2%;
+    font-size: 30px;
+    background: #47b2e4;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    padding: 10px;
+    display: none;
+}
+.to-top i 
+{
+    margin-top: 15px;
+}
+.to-top a 
+{
+    color: #fff;
+}
+.to-top.active 
+{
+    display: block;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     animation: fadeUp linear 0.2s;
+}
+@keyframes fadeUp {
+    from {
+        transform: translateY(10%);
+    }to {
+        transform: translateY(0%);
+    }
+}
+.content-11
+{
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f3f5f9;
+}
+.content-11 .content-11-heading
+{
+    font-size: 17px;
+    color: #37517e;
+    margin-bottom: 10px;
+}
+.content-11 .content-11-about
+{
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px;
+    line-height: 28px;
+}
+.src-btn 
+{
+    width: 312px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 24px;
+    outline: none;
+    background: none;
+    font-size: 16px;
+}
+.sub-btn 
+{
+    width: 152px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 24px;
+    color: #fff;
+    background: #47b2e4;
+    font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+     
+  
+}
+.content-11-box 
+{
+    background: #fff;
+    border-radius: 24px;
+}
+#footer 
+{
+    height: 100px;
+    background: #37517e;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.footer-heading 
+{
+    font-size: 12px;
+    padding: 20px;
+    color: #fff;
+    position: absolute;
+    bottom: 2%;
 }

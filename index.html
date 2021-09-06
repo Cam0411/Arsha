@@ -17,10 +17,10 @@
           <h1 class="header-heading">arsha</h1>
           <ul id="nav">
               <li class="color-nav"><a href="">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Protfolio</a></li>
-              <li><a href="#">team</a></li>
+              <li><a href="#content-about">About</a></li>
+              <li><a href="#content-ser">Services</a></li>
+              <li><a href="#content-pro">Protfolio</a></li>
+              <li><a href="#content-team">team</a></li>
               <li><a href="#">Drop Down <i class="arrow-2 fas fa-chevron-down"></i> </a>
               <ul id="sub-nav">
                 <li><a href="#">Drop Down 1 </a></li>
@@ -36,7 +36,7 @@
                 <li><a href="#">Drop Down 4 </a></li>
               </ul>
             </li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#footer">Contact</a></li>
               <li ><a class="border-nav" href="#">Get Started</a></li>
           </ul>
           <div id="menu-tablet">
@@ -56,7 +56,7 @@
       </div>
       <img src="hero-img.png">
     </div>
-    <div id="content">
+<div id="content">
                 <div class="content-1">
            <img src="client-1.png">
            <img src="client-2.png">
@@ -64,9 +64,11 @@
            <img src="client-4.png">
            <img src="client-5.png">
            <img src="client-6.png">
+           <div id="content-about"></div>
              </div>
+            
               <div class="content-2">
-          
+               
            <h1 class="content-2-heading">ABOUT US</h1>
            <div class="content-2-all-text">  
              <div class="content-2-left-text"> 
@@ -119,8 +121,11 @@
                <li id="content-4-sub-li-4">PHOTOSHOP  <span class="perc">55%</span> </li>
              </ul>
            </div>
+       
          </div>
+         <div id="content-ser"></div>
          <div class="content-5">
+        
           <h1 class="content-5-heading">SERVICES </h1>
            <div class="content-5-all-txt"> 
          
@@ -165,6 +170,7 @@
            </div>
            <p class="content-6-box">Call To Action</p>
          </div>
+         <div id="content-team"></div>
          <div class="content-7">
            
           <h1 class="content-7-heading"> Team </h1>
@@ -306,22 +312,34 @@
                     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24194.905741139206!2d-74.006113!3d40.71002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1svi!2sbg!4v1630900392911!5m2!1svi!2sbg" width="340" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                    </div>
                    <div class="content-10-box content-10-box-2">
-                    <div class="content-10-sub-box-txt"> 
+                    <div class="content-10-sub-box-txt-2"> 
                       <form action=" ">
-                     <input type="text" placeholder="Your Name" class="text">
-                     <input type="text" placeholder="Your Email"  class="text">
-                     <input type="text" placeholder="Subject"  class="text">
-                     <input type="text" placeholder="Message"  class="text text-2">
-                     <input type="submit" class="text text-3" value="Send Message">
+                     <input type="text" placeholder="Your Name" required class="text">
+                     <input type="text" placeholder="Your Email" required class="text">
+                     <input type="text" placeholder="Subject" required class="text">
+                     <input type="text" placeholder="Message" required class="text text-2">
+                     <input type="submit" class="text text-3" required value="Send Message">
                     </form>
                 </div>
                      </div>
                     
                 </div>
         </div>
-    
-    <div id="footer">
+        <div class="content-11">
+          <h1 class="content-11-heading">Join Our Newsletter</h1>
+          <div class="content-11-about">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</div>
+          <div class="content-11-box">
+            <form action=" " method="get">
+            <input type="text" required  class="src-btn">
+            <input type="submit" class="sub-btn" value="Subscribe">
+          </form>
 
+          </div>
+        </div>
+</div>
+       
+    <div id="footer">
+       <h1 class="footer-heading">Designed by <span class="num"> BootstrapMade </span> </h1>
     </div>
     <div class="modal">
         <div class="modal-content">
@@ -354,7 +372,9 @@
             </ul>
         </div>
     </div>
-
+           <div  class="to-top">
+            <a href="#slider"> <i class="fas fa-sort-up"></i></a>
+           </div>
     <script>
         menus = document.querySelectorAll(".menu")
         modal = document.querySelector(".modal")
@@ -385,6 +405,43 @@
           } 
         });
       }
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+      
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+      
+            // Store hash
+            var hash = this.hash;
+      
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+         
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+      </script>
+      <script>
+        toTop = document.querySelector(".to-top")
+        window.addEventListener("scroll",() => {
+          if (window.pageYOffset > 100){
+            toTop.classList.add('active')
+          }else {
+            toTop.classList.remove('active')
+          }
+        })
       </script>
 </body>
 </html>

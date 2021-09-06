@@ -58,7 +58,7 @@
 }
 #content 
 {
-    height: 1000px;
+    height: 12700px;
 }
 #content .content-2
 {
@@ -228,6 +228,7 @@
 {
     width: 80%;
     margin-bottom: 20px;
+    margin-left: 0;
 }
 .map 
 {
@@ -244,7 +245,7 @@
     padding: 10px 14px;
     margin-top: 20px;
     margin-bottom: 40px;
-    width: 110%;
+    width: 106%;
     font-size: 18px;
     outline-color: #47b2e4;
     margin-left: -10px;
@@ -266,6 +267,46 @@
     font-weight: 700;
     -webkit-appearance: none !important;
 }
+.src-btn 
+{
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 24px;
+    outline: none;
+    background: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+.sub-btn 
+{
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 24px;
+    color: #fff;
+    background: #47b2e4;
+    font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    float: right;
+  
+}
+.content-11-box 
+{
+    padding: 20px;
+    background: none;
+}
+.content-11
+{
+    height: 400px;
+}
+.content-11 .content-11-about
+{
+    margin-bottom: 0px;
+}
 }
 @media (max-width:400px)
 {
@@ -275,7 +316,7 @@
     }
     #content 
     {
-        height: 4000px;
+        height: 12000px;
     }
     #content .content-3 
     {
@@ -284,7 +325,7 @@
     }
     #content 
 {
-    height: 12000px;
+    height: 13900px;
 }
 .content-7 
 {
@@ -397,7 +438,7 @@
     }
     #content 
 {
-    height:11000px;
+    height:10150px;
 }
 .content-5 
 {
@@ -471,7 +512,7 @@
 }
 .content-10
 {
-    height: 1500px;
+    height: 1600px;
 }
 
 .content-10-all-box
@@ -489,10 +530,6 @@
 .map 
 {
     width: 490px;
-}
-.content-10
-{
-    height: 1500px;
 }
 
 }
